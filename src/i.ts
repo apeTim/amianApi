@@ -22,7 +22,7 @@ router.post('/preorder', async (req, res) => {
 })
 
 app.use(express.json())
-app.use(cors({ origin: ['https://www.theamian.com', 'https://theamian.com'] }))
+app.use(cors({ origin: '*' }))
 app.use('/api', router)
 
 
